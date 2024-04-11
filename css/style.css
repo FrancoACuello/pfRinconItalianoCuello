@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/*@import 'animate.css';*/  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, li {
+  color: black;
+  font-size: large;
+  display: inline-block;
+  font-style: italic;
+  list-style: none;
+  text-decoration: none;
+  padding: 2px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #6B8E23; /* Fondo en verde albahaca */
+  color: #fff; /* Texto en color blanco para contrastar con el fondo */
+  padding: 20px; /* Ajusta el espacio interno del footer según tus necesidades */
+  text-align: center; /* Centra el texto dentro del footer */
+  margin-top: auto;
+}
+
+/* HISTORIA Y CULTURA SOBRE LA PIZZA */
+.historiaPizza1, .historiaPizza2, .historiaPizza3, .tituloHistoria {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+  font-size: x-large;
+  font-style: inherit;
+  margin-bottom: 70px;
+  color: #F5DEB3;
+}
+
+/* NOSOTROS */
+.contenedorNuestraHistoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente los elementos */
+  justify-content: center; /* Centra verticalmente los elementos */
+  text-align: center; /* Centra el texto dentro de cada elemento */
+  margin: auto;
+}
+
+.nuestraHistoria, .nuestraHistoria2, .nuestraHistoria3 {
+  color: #F5DEB3;
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+/*SECCION BANNER*/
+body {
+  /* Propiedades para la imagen de fondo */
+  background-image: url("../Images/wooden-background.jpg");
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+/*Bienvenida de la pagina*/
+.banner_titulo {
+  padding-top: 4vh;
+  margin: 2vh;
+  font-family: "Roboto Slab", sans-serif;
+  position: relative;
+  top: 50%; /* Posiciona el título en la mitad superior del contenedor */
+  left: 50%; /* Centra el título horizontalmente en el contenedor */
+  transform: translate(-50%, 20%); /* Centra el título verticalmente y horizontalmente */
+  color: #F5DEB3; /* Color del texto */
+  text-align: center; /* Alinea el texto al centro */
+  text-shadow: 5px 5px 10px black;
+}
+
+.nuestrasPizzas {
+  color: #F5DEB3;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente los elementos */
+  justify-content: center; /* Centra verticalmente los elementos */
+  text-align: center; /* Centra el texto dentro de cada elemento */
+}
+
+/*Menu de pizzas*/
+.cartaPizzzas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imglogo{
+  border-radius: 20px;
+}
+.imagenPizza, .textoPizza {
+  font-size: x-large;
+  text-shadow: #333;
+  background-color: rgba(0, 0, 0, 0.421);
+  color: #ffffffc4;
+  width: 350px; /* Ancho deseado para cada carta de receta */
+  height: auto;
+  margin: 20px; /* Espacio entre las cartas */
+  text-align: center;
+  border-radius: 30px;
+  border: solid rgba(167, 109, 9, 0.54) 5px;
+}
+
+.imagenPizza img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px; /* Es opcional: agrega esquinas redondeadas a las imágenes */
+}
+
+/* Estilos de la sección */
+#articulos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente fila si no hay suficiente espacio */
+  justify-content: space-between; /* Distribuye las tarjetas uniformemente a lo largo del contenedor */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #6B8E23;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de las tarjetas */
+.tarjeta {
+  flex: 10 10 calc(100% - 50px); /* Calcula el ancho de cada tarjeta, considerando el margen */
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Asegura que el margen no afecte el ancho real de la tarjeta */
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilos para los encabezados y párrafos dentro de las tarjetas */
+.tarjeta h3, .tarjeta p {
+  font-size: larger;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.carousel-inner, .carousel-inner {
+  display: flex;
+  padding: 100px;
+  
+}
+
+/* Estilos generales para todas las pantallas */
+body {
+  font-family: "Arial", sans-serif;
+  /* Otros estilos generales */
+}
+
+/* Media query para dispositivos móviles (ej. iPhone, Android) */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+  .header {
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .menu {
+    display: block;
+  }
+  .main-content {
+    width: 100%;
+  }
+}
+/* Media query para tablets (ej. iPad) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  .imagenPizza {
+    font-size: 18px;
+  }
+  .header {
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .menu {
+    display: block;
+  }
+  .main-content {
+    width: 100%;
+  }
+}
+/* Media query para pantallas más grandes (escritorio) */
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 25px;
+  }
+  .imagenPizza {
+    font-size: 25px;
+  }
+  .header {
+    padding: 10px;
+    text-align: center;
+  }
+  .menu {
+    display: block;
+  }
+  .main-content {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*Cards */
+.shop-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+background-color: #000000bd;
+padding: 5vh;
+border-radius: 7vh;
+}
+.card { /* Añadir un borde opcional */
+  border-radius: 20px; /* Añadir bordes redondeados opcionalmente */
+  box-shadow: 5px 5px 10px 7px #c7880090;
+ margin-top: 2vh;
+ margin-bottom: 2vh;
+ background-color: #000000;
+}
+
+.shop-content img {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 20vh;
+  background-color: #000000;
+}
+
+.price {
+  color: #36f036;
+  font-size: 22px;
+  text-align: center;
+  background-color: #000000;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 1.2;
+  color:rgb(248, 189, 51);
+}
+
+.nav-item {
+  color: white;
+  font-size: 20px;
+}
+
+.modal-container {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: rgb(255, 255, 255);
+  background-image: url("../Images/wooden-background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*for the top*/
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 5vh;
+  scrollbar-color:  rgb(0, 0, 0) rgba(128, 128, 128, 0);
+  
+}
+
+/* para no mostrar la barra de scroll */
+.modal-container::-webkit-scrollbar {
+  display:list-item;
+  
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color:rgba(0, 0, 0, 0.817);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  margin-left: 2vh;
+  border-radius: 30px;
+  border: groove rgba(141, 66, 0, 0.693) 20px;
+  padding-top: 10px;
+}
+
+.modal-header-title {
+  justify-self: start;
+  font-size: 18px;
+}
+
+.modal-header-button {    
+  font-size:small;
+  cursor: pointer;
+  padding: 4px;
+  border: solid whitesmoke 2px;
+  border-radius: 20px;
+
+}
+
+.modal-container > .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.697);
+  border-radius: 30px;
+  border: solid rgba(245, 245, 245, 0.406) 4px;
+}
+
+.modal-container >div>img{
+  height: 120px;
+  width: 120px;
+}
+
+.total-content{
+  font-size: 15px; font-family: Oswald;
+  padding: 20px;
+  text-align: center;
+  padding-top:20px ;
+  background-color: #ca690e;
+  border-radius: 4vh;
+  color: #000000;
+  font-family: Oswald;
+}
+
+.delete-product{
+  cursor: pointer;
+}
+
+.cantidad-carrito {
+  background-color: green;
+  color: white;
+  border-radius: 20%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
+
+.sumar, .restar, .cantidad {
+  cursor: pointer;
+  
+}
+
+
+
+#footer1{
+  border-radius: 30px;
+  border: outset rgb(31, 50, 0) 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #000000;
+  font-size: 1,2vh;
+}
+
+.popup{
+  border-radius: 40px;
+  border: solid rgba(118, 0, 0, 0.689) 5px;
+}
